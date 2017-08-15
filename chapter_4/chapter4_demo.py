@@ -11,12 +11,12 @@ file = urllib.request.urlopen("http://wwww.baidu.com")
 # print(dataline)
 # print(datalines)
 #
-# fhandle = open("D:/Study_Python_Practice/Deep_in_Python_Web_Crawler/Test1.html","wb")
+# fhandle = open("D:/Deep_in_Python_Web_Crawler/chapter_4/Test1.html","wb")
 # fhandle.write(data)
 # fhandle.close()
 
 
-# filename = urllib.request.urlretrieve("http://edu.51cto.com",filename = "D:/Study_Python_Practice/Deep_in_Python_Web_Crawler/Test2.html")
+# filename = urllib.request.urlretrieve("http://edu.51cto.com",filename = "D:/Deep_in_Python_Web_Crawler/chapter_4/Test2.html")
 # print(file.getcode())
 # print(file.info())
 # print(file.geturl())
@@ -28,6 +28,6 @@ opener = urllib.request.build_opener()
 opener.addheaders = [headers]
 data = opener.open(url).read()
 print(data)
-fhandle = open("D:/Study_Python_Practice/Deep_in_Python_Web_Crawler/chapter_4/Test3.html","wb")
+fhandle = open("D:/Deep_in_Python_Web_Crawler/chapter_4/Test3.html","wb")
 print(fhandle.write(data))
 fhandle.close()
